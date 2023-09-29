@@ -7,7 +7,7 @@ public class WeatherStation {
         WeatherData weatherData = new WeatherData();
 
         // Create observers
-        AppleIOSCurrentConditionsDisplay currentDisplay = new AppleIOSCurrentConditionsDisplay();
+        AppleIOSDisplay currentDisplay = new AppleIOSDisplay();
         RTBFTvChannelForecastDisplay forecastDisplay = new RTBFTvChannelForecastDisplay();
 
         // Register observers with the subject
