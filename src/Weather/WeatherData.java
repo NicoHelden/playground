@@ -22,6 +22,7 @@ public class WeatherData {
     public void addObserver(Observable observer) {
         observers.add(observer);
     }
+
     public void removeObserver(Observable observer) {
         observers.remove(observer);
     }
@@ -33,7 +34,6 @@ public class WeatherData {
         this.humidity = humidity;
         notifyObservers();
     }
-
 
     // Notify all registered observers when data changes
     public void notifyObservers() {
